@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --background-color: rgb(64, 0, 138);
+    --font-color: white;
+    --button-bgColor: #6e2ee6;
+}
+
+body {
+    background-color: var(--background-color);
+    
+   
+
+}
+
+/* navbar */
+
+.navbar-brand img {
+    width: 30%;
+    height: auto;
+
+}
+
+.nav-item a {
+    color: var(--font-color);
+}
+
+.nav-item a:hover {
+    background-color: var(--button-bgColor);
+    color: var(--font-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* hero section start */
+.hero__text {
+    color: var(--font-color);
+}
+
+
+.hero__button a {
+    background-color: #6e2ee6;
+}
+
+.hero__button:hover a {
+    background-color: #561cc0;
+    color: var(--font-color);
+}
+
+/* hero section end */
+
+/* services section start */
+
+.service__header {
+    text-align: center;
+    color: var(--font-color);
+}
+
+/* services section start */
+
+.card-body,
+.card-body1 {
+    background-color: var(--font-color);
+    color: rgba(10, 10, 10, 0.836);
+    padding: 10px 10px;
+    border-radius: 10px;
+
+}
+
+.card-body1 {
+    background-color: var(--button-bgColor);
+    color: var(--font-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.card-body a {
+    color: var(--button-bgColor);
+    font-weight: 700;
+    position: relative;
+
+}
+
+.card-body a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--button-bgColor);
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+
+}
+.card-body a:hover::after{
+    width: 100%;
+}
+
+
+.btn2 {
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    border-radius: 10px;
+    padding: 6px 15px;
+}
+.btn2:hover{
+    background-color: #651ceb;
+    border: 1px solid #6e2ee6;
+}
+/* form  */
+input,
+.form-floating {
+    color: rgb(128, 59, 255);
+}
+
+.form-control,
+select {
+    margin-bottom: 10px;
+}
+
+/* carousel item */
+.carousel-item {
+    padding: 3% 1%;
+}
